@@ -36,7 +36,7 @@ class User extends Authenticatable
         'on_create' => true, // ['optional', 'bool'] default true
         'on_update' => true, // ['optional', 'bool'] default true
         'separator' => '-', // ['optional', 'string'] default "-"
-        'max_length' => 250, // ['optional', 'int', 'min:1'] default 250, if not unique can exice exceed 250 
+        'max_length' => 250, // ['optional', 'int', 'min:1'] default 250, if not unique can exceed 250 
     ];
 }
 
