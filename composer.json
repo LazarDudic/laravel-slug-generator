@@ -1,0 +1,43 @@
+{
+    "name": "dudic/laravel-slug-generator",
+    "description": "Description",
+    "keywords": [
+        "dudic",
+        "laravel-slug-generator"
+    ],
+    "homepage": "https://github.com/LazarDudic/laravel-slug-generator",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Lazar Dudic"
+        }
+    ],
+    "require": {
+        "php": ">=8.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.5.8",
+        "laravel/pint": "^1.2",
+        "orchestra/testbench": "^6.23|^7.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Dudic\\Sluggable\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Dudic\\Sluggable\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage",
+        "format": "vendor/bin/pint"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
