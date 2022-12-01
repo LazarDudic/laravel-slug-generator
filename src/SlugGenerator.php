@@ -77,12 +77,13 @@ trait SlugGenerator
         $count = 1;
         while ($this->where($this->slugConfig->slugField, $slug)->exists()) {
             $slug = $slug.$this->slugConfig->separator.$count;
+            $count++;
         }
 
         return $slug;
     }
 
-    protected function withmaxLength(string $slug): string
+    protected function withMaxLength(string $slug): string
     {
         if (strlen($slug) > $this->slugConfig->maxLength) {
             $slug = substr($slug, 0, $this->slugConfig->maxLength);
